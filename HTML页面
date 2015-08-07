@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>写文章</title>
+</head>
+<body>
+<form action="text.php"method="post">
+    <p>文章标题：<input type="text"name="title"/></p>
+    <p>文章作者：<input type="text"name="articleauthor"/>
+    图片作者：<input type="text"name="photoauthor" /></p>
+    <label>来源分类:</label>
+    <select>
+        <option value="学生会">学生会</option>
+        <option value="学工部">学工部</option>
+        <option value="团支部">团支部</option>
+        <option value="学校">学校</option>
+    </select>
+    <label>文章分类:</label>
+    <select>
+        <option value="新闻"selected="selected">新闻</option>
+        <option value="公告">公告</option>
+        <option value="活动">活动</option>
+    </select>
+    <p><textarea cols="70" rows="10" name="content"></textarea> </p><!--keyile,再加上功能-->
+    <p>文章标签：<input type="text"name="tag"/> </p>
+    <input type="submit" value="确定"name="submit"/>
+</form>
+</body>
+</html>
